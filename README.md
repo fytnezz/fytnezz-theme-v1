@@ -9,8 +9,8 @@ Base local para modificar fytnezz.com usando Shopify Dawn, Codex PC, GitHub y la
 - Estructura Shopify valida: `assets`, `config`, `layout`, `locales`, `sections`, `snippets`, `templates`.
 - Guias para agentes: `AGENTS.md`, `CODEX.md`, `.agents/skills`.
 - GitHub conectado: cuenta `fytnezz`.
-- Repo visible por el conector: `fytnezz/fytnezz-web-v5`.
-- Pendiente tecnico: instalar o activar `git`, `gh` y Shopify CLI en Windows para subir el tema completo, crear ramas locales y sincronizar con Shopify sin hacerlo archivo por archivo.
+- Repo remoto: `fytnezz/fytnezz-theme-v1`.
+- Shopify store: `p029a3-tm.myshopify.com`.
 
 ## Fuentes base
 
@@ -21,15 +21,14 @@ Base local para modificar fytnezz.com usando Shopify Dawn, Codex PC, GitHub y la
 
 ## Flujo recomendado
 
-1. Instalar Git, GitHub CLI y Shopify CLI.
-2. Usar o renombrar el repo GitHub a `fytnezz-theme`.
-3. Subir esta carpeta como primera version del repo.
+1. Usar el repo GitHub `fytnezz/fytnezz-theme-v1`.
+2. Subir esta carpeta como primera version del tema.
 4. En Shopify Admin, conectar primero un tema no publicado/de prueba a una rama estable.
 5. Trabajar cambios en ramas de laboratorio y feature antes de tocar la rama conectada al tema publicado.
 6. Probar con Shopify CLI:
 
 ```powershell
-shopify theme dev --store fytnezz.com
+shopify theme dev --store p029a3-tm.myshopify.com
 shopify theme check
 ```
 
@@ -65,8 +64,7 @@ La primera construccion sera la home page:
 
 Ver brief en `docs/HOMEPAGE_BUILD_BRIEF.md`.
 
-## Datos que faltan para completar la conexion remota
+## Datos que faltan para completar la conexion Shopify
 
-- Confirmar si el repo remoto final sera `fytnezz/fytnezz-theme` o si debo usar `fytnezz/fytnezz-web-v5`.
 - Confirmar que Shopify conectara un tema no publicado a `theme/fytnezz-clean-v0` o `lab/fytnezz-build-v0`.
-- Instalar o exponer `git`, `gh` y `shopify` CLI en el PATH de Windows.
+- Autenticar Shopify CLI cuando lo solicite el navegador.
