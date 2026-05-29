@@ -1,0 +1,8 @@
+.git/
+.github/
+.agents/
+AGENTS.md
+CODEX.md
+README.md
+.gitignore
+*.log
